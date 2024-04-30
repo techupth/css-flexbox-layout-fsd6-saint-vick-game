@@ -22,7 +22,6 @@
 }
 
 .middle div {
-  flex: 1;
   background-color: orange;
   display: flex;
   justify-content: center;
@@ -37,4 +36,16 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.nav {
+  flex: 1;
+}
+
+.content {
+  flex: 2;
+}
+
+.ads {
+  flex: 1;
 }
