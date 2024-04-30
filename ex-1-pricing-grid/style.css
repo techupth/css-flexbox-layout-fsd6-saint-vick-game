@@ -1,1 +1,115 @@
 /* Start coding here */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* MAIN */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  font-weight: 500;
+  background: #4568dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #b06ab3,
+    #4568dc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #b06ab3,
+    #4568dc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100vh;
+  gap: 3em;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 3em;
+  background-color: hsla(0, 50%, 100%, 0.2);
+  height: 20em;
+  width: 10em;
+  border-radius: 0.5em;
+}
+
+.pet-detail div {
+  margin-top: 0.5em;
+}
+
+.i-2 {
+  height: 30em;
+}
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+/* STYLE */
+.text-effect {
+  font-size: 1.6em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  text-decoration: none;
+  color: #351435;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  border: 3px solid rgb(255, 255, 255);
+  background-color: #ffe066;
+  border-radius: 0.5em;
+  padding: 0.25em 0.5em;
+  position: relative;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #351435;
+  z-index: -1;
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+a:hover:before {
+  transform: translateY(0);
+}
+
+a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.price {
+  font-size: 2em;
+}
+
+hr {
+  border: none; /* Remove default border */
+  height: 0.02em; /* Set height */
+  background-color: #0000003f; /* Set background color */
+  margin: 1em 0;
+}

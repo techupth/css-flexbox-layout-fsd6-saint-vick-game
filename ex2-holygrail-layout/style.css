@@ -1,1 +1,63 @@
 /* Start coding here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Header */
+.header-container {
+  background-color: teal;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section */
+.section-container {
+  display: flex;
+  background-color: orange;
+  height: 80vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+  border: 1px solid white;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border: 1px solid white;
+}
+
+.ads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+  border: 1px solid white;
+}
+
+/* Footer */
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: khaki;
+  height: 10vh;
+}
